@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log in to GitHub</title>
+    <style>
+    body>section{
+        font-family:"Arial-black";
+        color: grey;
+    }
+    .serviceAgreement{
+        display: inline;
+    }
+    a{
+        text-decoration: none;
+    }
+    h3{
+        font-family:"Arial";
+        font-size: 17px;
+        text-align:start;
+        padding-left: 25px;
+    }
+    button{
+        font-family:"Arial";
+        font-size: 25px;
+        color: white;
+        background-color: green;
+        height: 70px;
+        width: 350px;
+        border-radius: 7px;
+        border: none;
+    }
+    input{
+        height: 30px;
+        width: 350px;
+        font-size: 20px;
+        border-style: solid;
+        border-radius: 7px;
+        border-color: lightgrey;
+    }
+    form{
+        border-style: solid;
+        border-radius: 7px;
+        border-width: 2px;
+        border-color: lightgrey;
+        width: 400px;
+        text-align:center;
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="SignUpForma.php" method="post" target="_blank">
+            <section>
+                <h3>Username</h3>
+                <input type="text" name="username" placeholder="Pick a username">
+            </section>
+            <section>
+                <h3>Email</h3>
+                <input type="email" name="email" placeholder="you@example.com">
+            </section>
+            <section>
+                <h3>Password</h3>
+                <input type="password" name="password" placeholder="Create a password">
+            </section>
+
+            <p>
+                Make sure it's more than 15 characters, or at least<br>
+                8 characters, including a number, and a lowercase<br>
+                letter.
+            </p>
+
+            <button type="submit">Sign up for GitHub</button>
+
+            <p class="serviceAgreement">
+                <br>By clicking "Sign up for GitHub", you agree to our<br>
+                <a href="https://help.github.com/articles/github-terms-of-service/" target="_blank">terms of service</a>
+                and
+                <a href="https://help.github.com/privacy" target="_blank">privacy statement</a>
+                . We'll<br>occasionally send you account related emails.
+            </p>
+        </form>
+
+    </section>
+</body>
+</html>
